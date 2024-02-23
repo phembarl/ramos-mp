@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar,
+.inner-nav {
+  border-radius: 20px;
+}
+
+.nav-btn {
+  border-radius: 15px;
+}
