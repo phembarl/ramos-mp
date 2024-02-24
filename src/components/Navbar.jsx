@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center bg-black text-white pl-6 pr-3 py-2 navbar">
+    <div className="flex justify-between items-center bg-black text-white pl-6 pr-3 py-2 navbar absolute left-5 right-5">
       <a href="#" className="font-semibold text-lg flex">
         <Image
           src="/img/brand-icon.png"

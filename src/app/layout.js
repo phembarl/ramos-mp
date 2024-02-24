@@ -1,9 +1,10 @@
-import { Poppins } from 'next/font/google';
+import { Urbanist } from 'next/font/google';
 import './globals.css';
 
-const poppins = Poppins({
+const urbanist = Urbanist({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
+  fallback: ['sans-serif'],
 });
 
 export const metadata = {
@@ -14,7 +15,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={urbanist.className}>{children}</body>
     </html>
   );
 }
