@@ -14,3 +14,8 @@ body {
 .nav-btn {
   border-radius: 15px;
 }
+
+.inline-icons {
+  width: 80px;
+  height: 80px;
+}
