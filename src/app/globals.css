@@ -7,8 +7,17 @@ body {
 }
 
 .navbar,
-.inner-nav {
+.inner-nav,
+.strategic-section {
   border-radius: 20px;
+}
+
+.rounded-ramos {
+  border-radius: 20px;
+}
+
+.sales-stats {
+  border-top-left-radius: 20px;
 }
 
 .nav-btn {
