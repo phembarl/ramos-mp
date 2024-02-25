@@ -1,3 +1,4 @@
+import DataActions from '@/components/DataActions';
 import Hero from '@/components/Hero';
 import Maximize from '@/components/Maximize';
 import Navbar from '@/components/Navbar';
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Strategic />
       <Maximize />
+      <DataActions />
     </main>
   );
 }
