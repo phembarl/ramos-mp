@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero';
+import Maximize from '@/components/Maximize';
 import Navbar from '@/components/Navbar';
 import Strategic from '@/components/Strategic';
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Strategic />
+      <Maximize />
     </main>
   );
 }
