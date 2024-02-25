@@ -1,17 +1,16 @@
 'use client';
 
 import { Icon } from '@iconify/react';
-import React from 'react';
 
 const Maximize = () => {
   return (
-    <div className="mt-10 p-20">
+    <section className="mt-10 p-20">
       <p className="text-8xl mb-10">
         Maximize <span className="opacity-30">efficiency</span> <br /> with our
         intuitive
       </p>
 
-      <div className="flex justify-between border-b pb-16 border-ramosGrey border-b-2">
+      <div className="flex justify-between pb-16 border-ramosGrey border-b-2">
         <div className="flex">
           <div className="bg-ramosGrey w-32 h-32 rounded-full flex justify-center items-center relative -mr-5 z-10">
             <div className="text-white bg-ramosOrange rounded-lg p-2 z-10">
@@ -47,7 +46,7 @@ const Maximize = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
