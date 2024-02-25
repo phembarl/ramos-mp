@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 /* eslint-disable @next/next/no-img-element */
 const Hero = () => {
   return (
-    <div className="h-lvh text-8xl flex flex-col justify-center items-center leading-tight">
+    <div className="h-lvh text-8xl flex flex-col justify-center items-center leading-tight font-medium">
       <div className="flex">
         <div>
           <div className="flex justify-end">
