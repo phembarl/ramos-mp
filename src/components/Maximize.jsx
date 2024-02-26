@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 const Maximize = () => {
   return (
     <section className="mt-10 p-20">
-      <p className="text-8xl mb-10">
+      <p className="text-8xl mb-10 font-medium">
         Maximize <span className="opacity-30">efficiency</span> <br /> with our
         intuitive
       </p>
