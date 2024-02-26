@@ -1,9 +1,26 @@
+'use client';
+
 import Image from 'next/image';
+import { motion } from 'framer-motion';
+import {
+  navLogoVariants,
+  navVariants,
+  navbarVariants,
+} from '@/helpers/variants';
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center bg-black text-white pl-6 pr-3 py-2 navbar absolute left-10 right-10">
-      <a href="#" className="font-semibold text-lg flex">
+    <motion.nav
+      className="flex justify-between items-center bg-black text-white pl-6 pr-3 py-2 navbar absolute left-10 right-10 overflow-hidden"
+      variants={navbarVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.a
+        href="#"
+        className="font-semibold text-lg flex"
+        variants={navLogoVariants}
+      >
         <Image
           src="/img/brand-icon.png"
           alt="brand-icon"
@@ -11,8 +28,11 @@ const Navbar = () => {
           height={25}
         />
         <span>ramos</span>
-      </a>
-      <ul className="flex justify-between space-x-10 text-sm bg-neutral-800 p-4 inner-nav">
+      </motion.a>
+      <motion.ul
+        className="flex justify-between space-x-10 text-sm bg-neutral-800 p-4 inner-nav"
+        variants={navVariants}
+      >
         <li>
           <a href="#">Dashboard</a>
         </li>
@@ -28,12 +48,15 @@ const Navbar = () => {
         <li>
           <a href="#">Settings</a>
         </li>
-      </ul>
+      </motion.ul>
 
-      <button className="text-black bg-white px-10 py-4 text-sm nav-btn">
+      <motion.button
+        className="text-black bg-white px-10 py-4 text-sm nav-btn"
+        variants={navVariants}
+      >
         Sign Up
-      </button>
-    </div>
+      </motion.button>
+    </motion.nav>
   );
 };
 
