@@ -2,7 +2,7 @@ import ProgressBar from '@ramonak/react-progress-bar';
 import { useInView, animate } from 'framer-motion';
 import { useState, useEffect, useRef } from 'react';
 
-const ProgressGroup = () => {
+const ProgressBarGroup = () => {
   const [firstNum, setFirstNum] = useState(0);
   const [secondNum, setSecondNum] = useState(0);
   const [thirdNum, setThirdNum] = useState(0);
@@ -76,4 +76,4 @@ const ProgressGroup = () => {
   );
 };
 
-export default ProgressGroup;
+export default ProgressBarGroup;
