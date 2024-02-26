@@ -126,7 +126,7 @@ const FullControl = () => {
                     </button>
                   </div>
 
-                  <div className="text-xs text-gray-400 flex justify-between items-end w-60">
+                  <div className="text-xs text-gray-400 flex justify-between items-end space-x-3">
                     <div className="flex flex-col items-center">
                       <div className="bg-ramosGrey w-10 h-20 mb-3 rounded-md" />
                       <p>2021</p>
