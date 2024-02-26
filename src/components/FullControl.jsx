@@ -10,7 +10,7 @@ import {
   revealVariantsLeft,
   revealVariantsRight,
 } from '@/helpers/variants';
-import ProgressGroup from './progressGroup';
+import ProgressBarGroup from './ProgressBarGroup';
 
 const fillVariants = {
   visible: {
@@ -86,7 +86,7 @@ const FullControl = () => {
                 </span>
               </p>
 
-              <ProgressGroup />
+              <ProgressBarGroup />
 
               <div className="flex justify-between items-center mt-3">
                 <div className="flex items-center space-x-1">
