@@ -30,10 +30,12 @@ body {
 }
 
 .ramos-big {
-  font-size: 25rem;
+  font-size: 23rem;
 }
 
-/* .text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-} */
+@media (min-width: 1600px) {
+  body {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
