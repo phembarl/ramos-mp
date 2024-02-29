@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+body,
+html {
   font-family: 'Poppins', sans-serif;
+  min-width: 1500px;
 }
 
 .navbar,
