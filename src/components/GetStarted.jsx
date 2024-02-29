@@ -14,7 +14,7 @@ const GetStarted = () => {
     <section className="mt-10 p-5 text-center">
       <div className="flex justify-center">
         <motion.div
-          className="bg-ramosOrange p-8 rounded-3xl shadow-lg"
+          className="bg-ramosOrange p-8 mb-5 rounded-[40px] shadow-[0_35px_35px_rgba(254,74,35,0.25)]"
           variants={scaleVariantsAlt}
           initial="hidden"
           whileInView="visible"
@@ -24,7 +24,7 @@ const GetStarted = () => {
         </motion.div>
       </div>
       <p className="text-8xl mb-8 font-medium">
-        <AnimatedText text="Get started" el="span" />
+        <AnimatedText text="Get Started" el="span" />
       </p>
       <motion.p
         className="max-w-96 mx-auto text-gray-400 text-xl"
