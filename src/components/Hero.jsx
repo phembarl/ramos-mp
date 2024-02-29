@@ -34,7 +34,7 @@ const rotateVariants = {
 
 const Hero = () => {
   return (
-    <div className="h-lvh text-8xl flex flex-col justify-center items-center leading-tight font-medium">
+    <div className="h-screen text-8xl flex flex-col justify-center items-center leading-tight font-medium">
       <div className="flex">
         <div>
           <div className="flex justify-end">
