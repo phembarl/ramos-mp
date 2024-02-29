@@ -12,6 +12,11 @@ export const metadata = {
   description: 'Analytics that helps you shape the future ',
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 0.1,
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
