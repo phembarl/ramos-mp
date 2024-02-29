@@ -13,7 +13,7 @@ const scaleVariants = {
     scale: 1,
     transition: {
       ease: 'easeInOut',
-      delay: 0.8,
+      delay: 0.5,
       duration: 1,
     },
   },
@@ -26,7 +26,7 @@ const rotateVariants = {
     rotate: 0,
     transition: {
       ease: 'easeInOut',
-      delay: 0.8,
+      delay: 0.5,
       duration: 1,
     },
   },
@@ -76,7 +76,7 @@ const Hero = () => {
         </div>
         <div className="relative">
           <motion.div
-            className="inline-flex justify-center items-center h-10 w-10 absolute -top-3 left-7 bg-ramosOrange rounded-full"
+            className="inline-flex justify-center items-center h-10 w-10 absolute -top-3 left-7 bg-ramosOrange rounded-full z-10"
             variants={scaleVariants}
             initial="hidden"
             animate="visible"
@@ -88,29 +88,35 @@ const Hero = () => {
               className="text-white"
             />
           </motion.div>
-          <motion.img
-            src="/img/small-laptop.png"
-            alt=""
-            width={350}
-            className="ml-10"
+
+          <motion.span
+            className="relative inline-block"
             variants={scaleVariants}
             initial="hidden"
             animate="visible"
-          />
+          >
+            <img
+              src="/img/small-laptop.png"
+              alt=""
+              width={350}
+              className="ml-10 rounded-t-xl"
+            />
+            <div className="bg-ramosGrey rounded-t-xl w-10 h-10 absolute top-0 left-10" />
+          </motion.span>
         </div>
       </div>
       <div>
         <div>
           <AnimatedText text="shape" el="span" />
-          <motion.div
-            className="inline-flex justify-center items-center inline-icons bg-ramosYellow rounded-full mx-3"
+          <motion.span
+            className="inline-flex justify-center items-center inline-icons bg-ramosYellow rounded-full"
             variants={scaleVariants}
             initial="hidden"
             animate="visible"
           >
             <Icon icon="mi:bar-chart-alt" width="40" height="40" />
-          </motion.div>
-          <AnimatedText text="the future" el="span" />
+          </motion.span>
+          <AnimatedText text=" the future" el="span" />
         </div>
       </div>
     </div>

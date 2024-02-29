@@ -9,9 +9,9 @@ const AnimatedText = ({
   variants = textVariants,
 }) => {
   return (
-    <Wrapper className={className}>
+    <Wrapper className={`${className} overflow-hidden inline-flex`}>
       <motion.span
-        transition={{ staggerChildren: 0.1 }}
+        transition={{ staggerChildren: 0.05 }}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}

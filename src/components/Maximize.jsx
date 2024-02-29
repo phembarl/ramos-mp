@@ -11,15 +11,15 @@ import {
 
 const jumbotronVariants = {
   animate: {
-    x: [10, -350],
-    transition: { repeat: Infinity, duration: 10 },
+    x: [15, -350],
+    transition: { repeat: Infinity, duration: 5 },
   },
 };
 
 const Maximize = () => {
   return (
     <section className="mt-10 p-20">
-      <p className="text-8xl mb-10 font-medium">
+      <p className="text-8xl mb-10 font-medium leading-tight">
         <AnimatedText el="span" text="Maximize" />{' '}
         <span className="opacity-30">
           <AnimatedText el="span" text="efficiency" />

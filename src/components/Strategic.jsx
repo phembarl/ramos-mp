@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 'use client';
 
+import { useEffect, useRef, useState } from 'react';
 import {
   revealVariants,
   revealVariants2,
@@ -10,12 +11,22 @@ import {
 } from '@/helpers/variants';
 import { Icon } from '@iconify/react';
 import ProgressBar from '@ramonak/react-progress-bar';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import Counter from './Counter';
 
 const Strategic = () => {
+  const [visitorsNum, setVisitorsNum] = useState(0);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (isInView) {
+      setVisitorsNum(50);
+    }
+  }, [isInView]);
+
   return (
-    <section className="bg-ramosGrey strategic-section p-20">
+    <section className="bg-ramosGrey strategic-section p-10">
       <div>
         <div className="flex justify-between items-baseline">
           <motion.p
@@ -94,16 +105,19 @@ const Strategic = () => {
                   </div>
                   <div>
                     <p className="text-gray-400 text-sm mb-2">Total profit</p>
-                    <p>
+                    <p className="whitespace-nowrap">
                       $ <span className="font-medium text-3xl">264,2K</span>{' '}
                     </p>
                   </div>
                 </div>
-                <div className="bg-ramosGrey px-3 py-1 rounded-lg overflow-hidden">
+                <div
+                  ref={ref}
+                  className="bg-ramosGrey px-3 py-1 rounded-lg overflow-hidden"
+                >
                   <p className="font-medium">Visitors</p>
 
                   <ProgressBar
-                    completed={14}
+                    completed={visitorsNum}
                     isLabelVisible={false}
                     height="3px"
                     bgColor="rgb(34 197 94)"
@@ -150,7 +164,7 @@ const Strategic = () => {
                   <img src="img/line-chart.png" alt="line-chart" width={150} />
                 </div>
                 <div className="flex justify-between">
-                  <div className="text-gray-400 flex space-x-5 text-xs">
+                  <div className="text-gray-400 flex space-x-3 text-xs">
                     <p>Jan</p>
                     <p>Feb</p>
                     <p>Mar</p>
@@ -158,7 +172,7 @@ const Strategic = () => {
                     <p>May</p>
                   </div>
 
-                  <div className="w-24 p-2 bg-ramosOrange text-white rounded-lg absolute bottom-2 right-2">
+                  <div className="w-24 p-2 bg-ramosOrange text-white rounded-xl absolute bottom-2 right-2">
                     <div className="flex justify-between mb-2">
                       <p className="text-xs">Rate</p>
                       <Icon

@@ -32,7 +32,7 @@ export const navVariants = {
 };
 
 export const textVariants = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
     y: 0,
@@ -91,7 +91,7 @@ export const scaleVariants = {
 };
 
 export const scaleVariantsAlt = {
-  hidden: { opacity: 0, scale: 1.5 },
+  hidden: { opacity: 0, scale: 1.8 },
   visible: {
     opacity: 1,
     scale: 1,

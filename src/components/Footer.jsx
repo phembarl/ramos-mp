@@ -67,12 +67,12 @@ const Footer = () => {
           <AnimatedText
             el="span"
             text="Ramos&#174;"
-            className="text-8xl text-[9rem] relative"
+            className="text-9xl relative whitespace-nowrap"
           />
         </div>
 
         <motion.div
-          className="flex justify-between items-center space-x-52"
+          className="flex justify-between items-center space-x-40"
           variants={revealVariants}
           initial="hidden"
           whileInView="visible"

@@ -37,7 +37,7 @@ const FullControl = () => {
   return (
     <motion.section className="mt-10 p-20">
       <div>
-        <p className="text-8xl mb-10 font-medium">
+        <p className="text-8xl mb-10 font-medium leading-tight">
           <AnimatedText text="We give you full" el="span" />
           <br />{' '}
           <AnimatedText text="control" el="span" className="opacity-30" />{' '}
@@ -56,15 +56,19 @@ const FullControl = () => {
               viewport={{ once: true }}
             >
               <p className="text-sm mb-4">Conversion rate</p>
-              <div className="text-center font-medium text-4xl p-5 rounded-2xl mb-4 relative overflow-hidden z-10">
-                <div className="text-white">2.3%</div>
-                <div className="absolute top-5 z-10">2.3%</div>
-                <motion.div
-                  className="absolute top-0 bottom-0 left-0 bg-ramosYellow"
-                  variants={fillVariants}
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                />
+              <div className="relative">
+                <div className="text-center font-medium text-4xl p-5 rounded-2xl mb-4 relative overflow-hidden z-10">
+                  <div>2,3%</div>
+                  <motion.div
+                    className="absolute top-0 bottom-0 left-0 bg-ramosYellow -z-10"
+                    variants={fillVariants}
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                  />
+                </div>
+                <div className="border-4 w-7 h-7 rounded-full flex justify-center items-center absolute -top-2 -left-2 z-10 bg-white text-gray-600">
+                  <Icon icon="fe:line-chart" width={15} height={15} />
+                </div>
               </div>
 
               <p className="text-sm text-gray-400 w-24">
@@ -156,7 +160,17 @@ const FullControl = () => {
               whileInView="visible"
               viewport={{ once: true }}
             >
-              <p className="text-sm">Finance reports</p>
+              <div className="flex space-x-2 items-center">
+                <span className="bg-ramosGrey rounded-md p-1">
+                  <Icon
+                    icon="tabler:chart-dots"
+                    width={15}
+                    height={15}
+                    className="text-gray-600"
+                  />
+                </span>
+                <p className="text-sm">Finance reports</p>
+              </div>
             </motion.div>
             <motion.div
               className="p-5 bg-white rounded-3xl h-56 shadow-lg w-9/12 border border-ramosGrey z-10 mt-16"
@@ -166,7 +180,15 @@ const FullControl = () => {
               viewport={{ once: true }}
             >
               <div className="flex flex-col justify-between h-full">
-                <div>
+                <div className="flex space-x-2 items-center">
+                  <span className="bg-ramosGrey rounded-md p-1">
+                    <Icon
+                      icon="healthicons:chart-line"
+                      width={15}
+                      height={15}
+                      className="text-gray-600"
+                    />
+                  </span>
                   <p className="text-sm">Insights</p>
                 </div>
 
